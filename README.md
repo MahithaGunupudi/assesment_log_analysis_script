@@ -1,1 +1,0 @@
-# assesment_log_analysis_script
