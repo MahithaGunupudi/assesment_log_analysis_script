@@ -3,7 +3,7 @@ import csv
 from collections import Counter
 
 # 1. Parse the log file
-log_file = 'sample.log'
+log_file = 'sample log file.txt'
 with open(log_file, 'r') as file:
     logs = file.readlines()
 
