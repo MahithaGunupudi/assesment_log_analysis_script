@@ -7,15 +7,9 @@ log_file = "sample.log"
 
 # Function to parse log file
 def parse_log_file(file_path):
-    try:
-        with open(file_path, "r") as file:
-            logs = file.readlines()
-        print(f"Log file loaded successfully: {len(logs)} lines found.")
-        return logs
-    except FileNotFoundError:
-        print("Log file not found. Please check the file path.")
-        exit()
-
+    with open(file_path, "r") as file:
+        logs = file.readlines()
+    return logs
 # Function to count requests per IP address
 def count_requests_per_ip(logs):
     ip_pattern = r"^\d+\.\d+\.\d+\.\d+"
