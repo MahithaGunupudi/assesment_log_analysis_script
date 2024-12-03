@@ -10,6 +10,7 @@ def parse_log_file(file_path):
     with open(file_path, "r") as file:
         logs = file.readlines()
     return logs
+
 # Function to count requests per IP address
 def count_requests_per_ip(logs):
     ip_pattern = r"^\d+\.\d+\.\d+\.\d+"
@@ -95,5 +96,6 @@ def main():
     write_to_csv(ip_counts, most_frequent, suspicious_activity)
     print("\nResults saved to 'log_analysis_results.csv'.")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
+
